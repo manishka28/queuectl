@@ -1,0 +1,21 @@
+[2025-11-13T10:22:12.287Z] 📊 Queue Status Overview:
+[2025-11-13T10:22:12.304Z] pending: 1
+[2025-11-13T10:22:12.306Z] processing: 0
+[2025-11-13T10:22:12.310Z] completed: 2
+[2025-11-13T10:22:12.311Z] dead: 0
+[2025-11-13T10:22:21.882Z] ❌ Invalid job JSON: SQLITE_CONSTRAINT: UNIQUE constraint failed: jobs.id
+[2025-11-13T10:22:39.686Z] ✅ Enqueued job job2
+[2025-11-13T10:22:45.080Z] ❌ Invalid job JSON: SQLITE_CONSTRAINT: UNIQUE constraint failed: jobs.id
+[2025-11-13T10:23:12.640Z] ✅ Enqueued job job3
+[2025-11-13T10:23:20.982Z] 📊 Queue Status Overview:
+[2025-11-13T10:23:20.988Z] pending: 3
+[2025-11-13T10:23:20.990Z] processing: 0
+[2025-11-13T10:23:20.993Z] completed: 2
+[2025-11-13T10:23:20.995Z] dead: 0
+[2025-11-13T10:23:31.906Z] 🚀 Starting 1 worker(s), polling every 2s...
+[2025-11-13T10:23:33.920Z] 👷 Worker 1 picked job job_fail_1
+[2025-11-13T10:23:34.001Z] ❌ Job job_fail_1 failed: Command failed: invalidcommand
+[2025-11-13T10:23:35.931Z] 👷 Worker 1 picked job job2
+[2025-11-13T10:23:35.967Z] ✅ Job job2 completed successfully
+[2025-11-13T10:23:37.940Z] 👷 Worker 1 picked job job3
+[2025-11-13T10:23:37.993Z] ✅ Job job3 completed successfully

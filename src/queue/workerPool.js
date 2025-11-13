@@ -1,11 +1,9 @@
-// src/queue/workerPool.js
 import { spawn } from 'child_process';
 import * as storage from './storage.js';
 import defaultCfg from './config.js';
 
 let shouldStop = false;
 
-// run shell command and return { code, stdout, stderr }
 function runCommand(cmd, timeoutSec) {
   return new Promise((resolve) => {
     const proc = spawn(cmd, { shell: true });
@@ -19,7 +17,10 @@ function runCommand(cmd, timeoutSec) {
     if (timeoutSec && timeoutSec > 0) {
       to = setTimeout(() => {
         timedOut = true;
-        try { proc.kill('SIGKILL'); } catch (e) { /* ignore */ }
+        try { proc.kill('SIGKILL'); } catch (e) { 
+          console.log(e);
+          
+        }
       }, timeoutSec * 1000);
     }
 
@@ -44,7 +45,6 @@ async function workerLoop(workerId, backoffBase) {
   while (!shouldStop) {
     const job = storage.claimJobReady();
     if (!job) {
-      // no ready job; sleep short
       await new Promise(r => setTimeout(r, 500));
       continue;
     }
@@ -70,7 +70,7 @@ export async function startWorkers(count = 1, backoffBase = null) {
   backoffBase = backoffBase || Number(storage.getConfig('backoffBase') || defaultCfg.backoffBase);
   const promises = [];
   for (let i = 0; i < count; i++) promises.push(workerLoop(i + 1, backoffBase));
-  // Wait for exit (these loops exit when shouldStop becomes true)
+
   await Promise.all(promises);
 }
 

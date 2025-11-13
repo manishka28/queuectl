@@ -1,4 +1,3 @@
-// src/queue/jobQueue.js
 import * as storage from './storage.js';
 
 export async function processJob(workerId) {

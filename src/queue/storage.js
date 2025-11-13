@@ -5,12 +5,10 @@ import { fileURLToPath } from 'url';
 
 let db;
 
-// Setup correct file path
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const dbPath = path.join(__dirname, '../../queuectl.db');
 
-// Initialize database
 export async function init() {
   db = await open({
     filename: dbPath,
@@ -41,7 +39,7 @@ export async function init() {
     )
   `);
 
-  console.log('✅ SQLite database initialized at', dbPath);
+  console.log('SQLite database initialized at', dbPath);
 }
 
 // Add job
