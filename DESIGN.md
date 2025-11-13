@@ -6,27 +6,27 @@ Folder Architecture
 ```bash
 queuectl/
 ├── src/
-│   ├── cli.js
-│   ├── server.js
-│   ├── viewDb.js
-│   ├── queue/
-|   |   ├── config.js
-|   |   ├── workerPool.js
-│   |   ├── jobQueue.js
-│   |   └── storage.js
-│   └── utils/
-│       └── logger.js
+│ ├── cli.js
+│ ├── server.js
+│ ├── viewDb.js
+│ ├── queue/
+│ │ ├── config.js
+│ │ ├── workerPool.js
+│ │ ├── jobQueue.js
+│ │ └── storage.js
+│ └── utils/
+│ └── logger.js
 ├── tests/
-│   └── test-dlq.js ....
+│ └── test-dlq.js
 ├── queuectl.db
 ├── README.md
 ├── DESIGN.md
 ├── package.json
 ├── screenshots/
-│   ├── 1-view-db.png
-│   ├── 2-enqueue.png
-│   ├── 3-worker.png
-│   ....
+│ ├── 1-view-db.png
+│ ├── 2-enqueue.png
+│ ├── 3-worker.png
+│ └── ...
 
 ```
 
@@ -45,4 +45,5 @@ queuectl/
 3. Completion/Failure: On success → state = "completed". On failure → retries until max_retries, then moves to DLQ.
 4. DLQ(Dead Letter Queue) : Failed jobs beyond retry limit are stored in the dlq table.
 5. Monitoring: API (/status, /jobs, /dlq) or CLI (status, viewDb.js) are used to monitor system state.
+
 
