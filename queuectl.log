@@ -37,3 +37,23 @@
 [2025-11-13T11:37:21.641Z] 🚀 Starting 1 worker(s), polling every 3s...
 [2025-11-13T11:37:24.661Z] 👷 Worker 1 picked job job5
 [2025-11-13T11:37:24.745Z] ❌ Job job5 failed: Command failed: invalidCommandXYZ
+[2025-11-13T14:26:39.346Z] Enqueued job job6
+[2025-11-13T14:26:48.694Z] Enqueued job job7
+[2025-11-13T14:27:01.867Z]  Queue Status Overview:
+[2025-11-13T14:27:01.872Z] pending: 2
+[2025-11-13T14:27:01.877Z] processing: 0
+[2025-11-13T14:27:01.878Z] completed: 5
+[2025-11-13T14:27:01.881Z] dead: 2
+[2025-11-13T14:27:17.382Z] Starting 2 worker(s), polling every 3s...
+[2025-11-13T14:27:20.395Z] 👷 Worker 1 picked job job6
+[2025-11-13T14:27:20.570Z] 👷 Worker 2 picked job job6
+[2025-11-13T14:27:20.623Z] Job job6 completed successfully
+[2025-11-13T14:27:20.625Z] Job job6 completed successfully
+[2025-11-13T14:27:23.397Z] 👷 Worker 1 picked job job7
+[2025-11-13T14:27:23.449Z] 👷 Worker 2 picked job job7
+[2025-11-13T14:27:23.501Z] Job job7 completed successfully
+[2025-11-13T14:27:23.503Z] Job job7 completed successfully
+[2025-11-13T14:27:56.327Z] Enqueued job job8
+[2025-11-13T14:28:12.631Z] Starting 1 worker(s), polling every 3s...
+[2025-11-13T14:28:15.651Z] 👷 Worker 1 picked job job8
+[2025-11-13T14:28:15.720Z] ❌ Job job8 failed: Command failed: invalidCommandXYZ

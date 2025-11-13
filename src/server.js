@@ -75,6 +75,6 @@ const port = process.env.PORT || 3000;
   //  Start the Express server
   // -----------------------
   app.listen(port, () => {
-    console.log(`✅ QueueCTL API running at http://localhost:${port}`);
+    console.log(` QueueCTL API running at http://localhost:${port}`);
   });
 })();
