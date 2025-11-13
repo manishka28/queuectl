@@ -1,18 +1,21 @@
 {
   "name": "queuectl",
   "version": "1.0.0",
-  "description": "CLI based background job",
-  "main": "index.js",
+  "description": "CLI-based job queue system (Node.js + SQLite)",
+  "main": "src/cli.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/cli.js",
+    "dev": "nodemon --watch src --exec \"node src/cli.js worker:start -- --count 1\"",
+    "server": "node src/server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^5.1.0"
+    "commander": "^11.0.0",
+    "express": "^4.21.2",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
-    "nodemon": "^3.1.11"
+    "nodemon": "^3.0.1"
   }
 }
