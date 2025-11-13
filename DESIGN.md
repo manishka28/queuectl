@@ -46,4 +46,4 @@ queuectl/
 4. DLQ(Dead Letter Queue) : Failed jobs beyond retry limit are stored in the dlq table.
 5. Monitoring: API (/status, /jobs, /dlq) or CLI (status, viewDb.js) are used to monitor system state.
 
-
+![alt text](diagram-export-11-13-2025-7_48_10-PM.png)
