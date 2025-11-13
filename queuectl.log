@@ -19,3 +19,21 @@
 [2025-11-13T10:23:35.967Z] ✅ Job job2 completed successfully
 [2025-11-13T10:23:37.940Z] 👷 Worker 1 picked job job3
 [2025-11-13T10:23:37.993Z] ✅ Job job3 completed successfully
+[2025-11-13T11:23:53.557Z] ❌ Invalid job JSON: SQLITE_CONSTRAINT: UNIQUE constraint failed: jobs.id
+[2025-11-13T11:24:03.908Z] ❌ Invalid job JSON: SQLITE_CONSTRAINT: UNIQUE constraint failed: jobs.id
+[2025-11-13T11:29:31.164Z] ✅ Enqueued job job4
+[2025-11-13T11:30:04.648Z] 📊 Queue Status Overview:
+[2025-11-13T11:30:04.654Z] pending: 1
+[2025-11-13T11:30:04.656Z] processing: 0
+[2025-11-13T11:30:04.659Z] completed: 4
+[2025-11-13T11:30:04.660Z] dead: 1
+[2025-11-13T11:31:16.089Z] 🚀 Starting 2 worker(s), polling every 3s...
+[2025-11-13T11:31:19.119Z] 👷 Worker 1 picked job job4
+[2025-11-13T11:31:19.173Z] 👷 Worker 2 picked job job4
+[2025-11-13T11:31:19.206Z] ✅ Job job4 completed successfully
+[2025-11-13T11:31:19.207Z] ✅ Job job4 completed successfully
+[2025-11-13T11:36:55.360Z] ❌ Invalid job JSON: SQLITE_CONSTRAINT: UNIQUE constraint failed: jobs.id
+[2025-11-13T11:37:09.834Z] ✅ Enqueued job job5
+[2025-11-13T11:37:21.641Z] 🚀 Starting 1 worker(s), polling every 3s...
+[2025-11-13T11:37:24.661Z] 👷 Worker 1 picked job job5
+[2025-11-13T11:37:24.745Z] ❌ Job job5 failed: Command failed: invalidCommandXYZ
