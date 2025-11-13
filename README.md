@@ -47,10 +47,14 @@ It allows enqueueing shell commands as jobs, executing them using worker process
       ```bash
       node src/cli.js status
       ```
+   iv. View DB
+      ```bash
+       node src/viewDb.js
+      ```
 
    OR
    
-4. Run Express Server
+5. Run Express Server
    ```bash
    npm run server
    ```
@@ -75,6 +79,7 @@ It allows enqueueing shell commands as jobs, executing them using worker process
 Manishka Gupta
 
    
+
 
 
 
